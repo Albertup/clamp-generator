@@ -163,6 +163,7 @@ input[type="text"]:focus {
   height: 4rem;
   bottom: 0;
   left: 50%;
+  transform: translateX(-50%);
 }
 
 .Footer a {
@@ -183,7 +184,7 @@ input[type="text"]:focus {
 
 .CopyButton {
   position: absolute;
-  top: 0.8rem;
+  top: 0.5rem;
   right: 0.5rem;
   background: var(--gray);
   border: none;
@@ -196,5 +197,5 @@ input[type="text"]:focus {
   justify-content: center;
 }
 .CopyButton:hover {
-  background: var(--gray-light); /* A slightly lighter gray for hover */
+  background: #5a6578; /* A slightly lighter gray for hover */
 }
