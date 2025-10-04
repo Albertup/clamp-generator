@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import Logo from './components/Logo';
 import './App.css';
 
 // --- Helper Functions ---
@@ -128,9 +129,12 @@ function App() {
   return (
     <>
       <main className="App">
+        <Logo className="App-logo" />
         <div className="Settings">
-          <h1 className="Title">Font-size Clamp Generator</h1>
-          <p className="Subtitle">Generate scaled font-size with clamp()</p>
+          <div class="Header">
+            <h1 className="Title">Madmoco Clamp Generator</h1>
+          </div>
+          <p className="Subtitle">Generate responsive CSS clamp() functions for fluid typography and spacing.</p>
 
           <div className="SettingsRow">
             <UnitInput
@@ -182,7 +186,7 @@ function App() {
       </main>
       <footer className="Footer">
         <a
-          href="https://github.com/Albertup/clamp-generator"
+          href="https://github.com/Madmoco/clamp-generator"
           target="_blank"
           rel="noopener noreferrer"
         >

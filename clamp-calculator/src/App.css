@@ -199,3 +199,29 @@ input[type="text"]:focus {
 .CopyButton:hover {
   background: #5a6578; /* A slightly lighter gray for hover */
 }
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.App-logo {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 180px;
+  height: 45px;
+  z-index: 1000;
+}
+
+.App-logo .cls-1 {
+  fill: var(--primary);
+  transition: fill 0.3s ease;
+}
+
+.App-logo:hover .cls-1 {
+  fill: var(--primary-light);
+}
